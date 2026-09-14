@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Ejercicio13 {
+    public static void main(String[] args) {
+        int[] A = {4,6,8,2,6,9,1};
+        int suma=0;
+        for(int num : A) suma+=num;
+        double media = (double)suma/A.length;
+
+        List<Integer> mayores = new ArrayList<>();
+        List<Integer> menores = new ArrayList<>();
+
+        for(int num : A){
+            if(num > media) mayores.add(num);
+            else menores.add(num);
+        }
+
+        System.out.println("Mayores que la media: " + mayores);
+        System.out.println("Menores que la media: " + menores);
+    }
+}
