@@ -1,0 +1,16 @@
+public class Ejercicio20 {
+    public static void main(String[] args) {
+        int[][] M = new int[10][10];
+
+        for(int i=0; i<10; i++){
+            for(int j=0; j<10; j++){
+                if(j >= i) M[i][j] = 0;
+            }
+        }
+
+        for(int[] fila : M){
+            for(int val : fila) System.out.print(val + " ");
+            System.out.println();
+        }
+    }
+}
