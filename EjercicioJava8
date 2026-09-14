@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Ejercicio8 {
+    public static void main(String[] args) {
+        int[] numeros = new int[30];
+        Random r = new Random();
+        int suma = 0, mayor = Integer.MIN_VALUE, menor = Integer.MAX_VALUE;
+
+        for(int i=0; i<30; i++){
+            numeros[i] = r.nextInt(100); // números aleatorios 0-99
+            suma += numeros[i];
+            if(numeros[i] > mayor) mayor = numeros[i];
+            if(numeros[i] < menor) menor = numeros[i];
+        }
+
+        double promedio = (double)suma / 30;
+        System.out.println("Mayor: " + mayor);
+        System.out.println("Menor: " + menor);
+        System.out.println("Promedio: " + promedio);
+    }
+}
