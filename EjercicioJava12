@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Ejercicio12 {
+    public static void main(String[] args) {
+        int[] A = {4,6,8,2,6,9,1};
+        int suma=0;
+        for(int num : A) suma+=num;
+        double media = (double)suma/A.length;
+
+        List<Integer> mayores = new ArrayList<>();
+        List<Integer> menores = new ArrayList<>();
+
+        for(int i=0; i<A.length; i++){
+            if(A[i] > media) mayores.add(i);
+            else menores.add(i);
+        }
+
+        System.out.println("Posiciones mayores que la media: " + mayores);
+        System.out.println("Posiciones menores que la media: " + menores);
+    }
+}
