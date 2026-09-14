@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Ejercicio11 {
+    public static void main(String[] args) {
+        int[] A = {4,6,8,2,6,9,1};
+        int X = 6;
+        List<Integer> B = new ArrayList<>();
+
+        for(int num : A){
+            if(num > X) B.add(num);
+        }
+
+        System.out.println("Valores mayores que " + X + ": " + B);
+    }
+}
