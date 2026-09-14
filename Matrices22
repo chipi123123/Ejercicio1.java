@@ -1,0 +1,13 @@
+public class Ejercicio22 {
+    public static void main(String[] args) {
+        int[][] M = {{-1,2,-3},{4,-5,6},{-7,8,9}};
+
+        for(int i=0; i<M.length; i++){
+            int cont=0;
+            for(int j=0; j<M[i].length; j++){
+                if(M[i][j] < 0) cont++;
+            }
+            System.out.println("Fila " + i + " tiene " + cont + " negativos.");
+        }
+    }
+}
