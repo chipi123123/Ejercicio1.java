@@ -1,0 +1,18 @@
+public class Ejercicio17 {
+    public static void main(String[] args) {
+        int[][] M = {{1,2,3},{4,5,6},{7,8,9}};
+        int filas = M.length, cols = M[0].length;
+
+        for(int i=0; i<filas; i++){
+            int sumaFila=0;
+            for(int j=0; j<cols; j++) sumaFila+=M[i][j];
+            System.out.println("Suma fila " + i + ": " + sumaFila);
+        }
+
+        for(int j=0; j<cols; j++){
+            int sumaCol=0;
+            for(int i=0; i<filas; i++) sumaCol+=M[i][j];
+            System.out.println("Suma columna " + j + ": " + sumaCol);
+        }
+    }
+}
